@@ -3,7 +3,7 @@ from fastapi.responses import PlainTextResponse
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 import time
 # Importer tes routes
-from app.routers import ingest, visualization  # Supprimé l'importation de auth
+from routers import ingest, visualization  # Supprimé l'importation de auth
 import os
 from dotenv import load_dotenv
 from app.routers import stock  # 👈 Ajouter cet import
